@@ -3,15 +3,15 @@ import { IconCheck } from "./icon-check";
 
 type FeatureCardProps = {
   active?: boolean;
-  title: string;
-  points: string[];
+  title: React.ReactNode;
+  points: React.ReactNode[];
   imageSrc?: string;
 };
 
 const FeatureCard = ({ title, points }: FeatureCardProps) => (
-  <div>
+  <div data-text className="flex flex-col gap-9 justify-center">
     <h2 className="text-3xl font-bold text-gray-800">{title}</h2>
-    <ul className="mt-4 list-inside text-gray-600">
+    <ul className="text-gray-600">
       {points.map((point, index) => (
         <li key={index} className="mt-1">
           <IconCheck className="w-6 h-6 fill-gray-800 inline-block mr-2" />
@@ -22,49 +22,116 @@ const FeatureCard = ({ title, points }: FeatureCardProps) => (
   </div>
 );
 
+const TitleHighlight = ({ children }: { children: React.ReactNode }) => (
+  <span className="bg-pink-600/60 px-1 rounded">{children}</span>
+);
+
+const PointHighlight = ({ children }: { children: React.ReactNode }) => (
+  <span className="text-pink-600 font-bold">{children}</span>
+);
+
 const content = [
   {
-    title: "Record yourself",
+    title: (
+      <>
+        <TitleHighlight>Record yourself</TitleHighlight> while training — like a
+        pro.
+      </>
+    ),
     points: [
-      "Setup timers for your exercises and recordings",
-      "Countdown audio cues for your isometrics holds",
-      "Simple interface. Just hit record and go!",
-      "All your recordings instantly saved to your phone's gallery",
+      <>
+        <PointHighlight>Set custom timers</PointHighlight> for each exercise and
+        recording with zero hassle
+      </>,
+      <>
+        Get <PointHighlight>audio countdowns</PointHighlight> for every
+        isometric hold
+      </>,
+      <>
+        A clean, intuitive interface — just tap <b>record</b> and crush your
+        set!
+      </>,
+      <>
+        All your videos are <PointHighlight>instantly saved</PointHighlight> to
+        your gallery
+      </>,
     ],
   },
   {
-    title: "Check your form",
+    title: <>Instantly review your form</>,
     points: [
-      "Instant playback of your recordings right after your set",
-      "Scrub through your video to analyze your form. Hold for precise scrubbing.",
-      "Make adjustments and record again to improve your technique",
+      <>
+        Replay your set <PointHighlight>the moment you finish</PointHighlight>
+      </>,
+      <>
+        Keep your best takes, ditch the rest — <b>no wasted storage</b>
+      </>,
+      <>
+        Scrub through your video to{" "}
+        <PointHighlight>perfect your technique</PointHighlight>
+      </>,
+      <>
+        Use a long press for <b>frame-by-frame precision</b>
+      </>,
     ],
   },
   {
-    title: "Track your progress",
+    title: <>Track your progress over time</>,
     points: [
-      "Calendar view of all your recorded workouts",
-      "Easily find previous recordings by date",
-      "See how your form improves over time",
-      "Stay motivated by tracking your journey",
+      <>
+        See every session in a{" "}
+        <PointHighlight>beautiful calendar view</PointHighlight>
+      </>,
+      <>
+        Find any recording by date — <b>instantly</b>
+      </>,
+      <>
+        Watch your form evolve and your{" "}
+        <PointHighlight>confidence grow</PointHighlight>
+      </>,
+      <>
+        Stay inspired by <b>tracking your journey</b> to mastery
+      </>,
+    ],
+  },
+  {
+    title: <>Fully customizable</>,
+    points: [
+      <>
+        Tailor the app to your needs with{" "}
+        <PointHighlight>flexible settings</PointHighlight>
+      </>,
+      <>
+        Quickly <b>switch timer settings</b> from the recording screen
+      </>,
+      <>
+        Enjoy a <PointHighlight>clean, ad-free experience</PointHighlight>{" "}
+        focused on your training
+      </>,
+      <>
+        Regular updates with <b>new features</b> based on user feedback
+      </>,
     ],
   },
 ];
 
-const images = ["/app-front-lever.png", "/app-jump.png", "/app-calendar.png"];
+const images = [
+  "/app-front-lever.png",
+  "/app-jump.png",
+  "/app-calendar.png",
+  "/app-settings.png",
+];
 
 export const FeatureList = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-10 px-8">
-      {content.map(({ title, points }, index) => {
-        const children = [
-          <div
-            key="text"
-            className="flex flex-col px-8 py-4 gap-8 justify-center"
-          >
-            <FeatureCard key={index} title={title} points={points} />
-          </div>,
-          <div key="image" className="flex justify-center items-center">
+    <div className="flex flex-col justify-center items-center px-8">
+      {content.map(({ title, points }, index) => (
+        <section
+          key={index}
+          className="pt-10 md:grid md:grid-cols-2 max-w-6xl odd:*:data-text:col-start-2 *:row-start-1"
+        >
+          <FeatureCard key={index} title={title} points={points} />
+          <div className="flex justify-center items-center pt-6">
             <Image
               className="grow max-w-2xs hover:scale-105 transition-transform"
               src={images[index]}
@@ -72,14 +139,11 @@ export const FeatureList = () => {
               width={720}
               height={1080}
             />
-          </div>,
-        ];
-        return (
-          <section key={index} className="grid grid-cols-2 max-w-6xl">
-            {index % 2 === 0 ? children : children.reverse()}
-          </section>
-        );
-      })}
+          </div>
+        </section>
+      ))}
     </div>
   );
 };
+
+// TODO: Review spacing on large screens. columns are not equal.

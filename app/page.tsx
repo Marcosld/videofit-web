@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
-      {/* <FeatureList /> */}
+      <FeatureList />
     </main>
   );
 }

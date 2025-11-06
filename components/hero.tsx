@@ -1,6 +1,8 @@
 import { StoreButton } from "@/components/store-button";
 import Image from "next/image";
 
+// TODO: Perhaps ???? hide subtitle on small screens to keep CTAs in the screen
+
 export const Hero = () => (
   <div className="flex justify-center bg-radial-[at_25%_50%] from-amber-50 via-pink-200 to-amber-50">
     <section className="py-12 px-8 max-w-6xl md:grid md:grid-cols-2 min-h-screen">
@@ -21,7 +23,7 @@ export const Hero = () => (
           <h1 className="text-4xl font-bold text-pink-600">
             Record yourself. Check your form. Track your progress.
           </h1>
-          <p className="mt-4 xl:mt-8 font-semibold text-gray-800 text-xl">
+          <p className="mt-4 xl:mt-8 font-semibold text-gray-800 text-xl hidden md:block">
             There is nothing like seeing yourself in action to improve in a
             sports discipline.
           </p>
