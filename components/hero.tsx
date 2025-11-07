@@ -1,54 +1,46 @@
-import { StoreButton } from "@/components/store-button";
 import Image from "next/image";
-
-// TODO: Perhaps ???? hide subtitle on small screens to keep CTAs in the screen
+import { StoreButtons } from "./store-buttons";
 
 export const Hero = () => (
   <div className="flex justify-center bg-radial-[at_25%_50%] from-amber-50 via-pink-200 to-amber-50">
     <section className="py-12 px-8 max-w-6xl md:grid md:grid-cols-2 min-h-screen">
       <div className="flex flex-col justify-center text-center items-center md:text-left md:items-start">
-        <div className="flex gap-4 justify-center items-center">
+        <div className="flex gap-4 justify-center md:justify-start items-center w-full">
           <Image
             src="/app-icon.png"
             alt="App logo"
-            width={48}
-            height={48}
-            className="rounded-xl"
-            priority
+            width={64}
+            height={64}
+            className="rounded-xl max-w-12 md:max-w-16"
+            preload
+            loading="eager"
           />
           <h1 className="text-3xl font-bold text-slate-800">VideoFit</h1>
+          <Image
+            className="hidden md:flex"
+            src="/website-qrcode.png"
+            alt="QR code to website"
+            width={120}
+            height={120}
+          />
         </div>
-        {/* TODO: Text writing animation. Perhaps change phrase colors */}
         <div className="mt-8 xl:mt-16">
           <h1 className="text-4xl font-bold text-pink-600">
             Record yourself. Check your form. Track your progress.
           </h1>
-          <p className="mt-4 xl:mt-8 font-semibold text-gray-800 text-xl hidden md:block">
+          <h2 className="mt-4 xl:mt-8 font-semibold text-gray-800 text-xl hidden md:block">
             There is nothing like seeing yourself in action to improve in a
             sports discipline.
-          </p>
+          </h2>
           <p className="mt-6 xl:mt-12 text-gray-600 text-lg">
-            VideoFit is a free workout video recorder and tracker for iOS and
-            Android. Whether you train calisthenics, yoga, weightlifting or any
-            other discipline, VideoFit will help you improve your form and
-            technique.
+            VideoFit is a free workout video recorder, timer and tracker for iOS
+            and Android. Whether you train calisthenics, handstands, yoga,
+            weightlifting or any other discipline, VideoFit will help you
+            improve your form and technique.
           </p>
         </div>
-        <div className="mt-12 xl:mt-24 flex flex-row gap-4">
-          <StoreButton
-            href="https://apps.apple.com/app/id6749822592"
-            imageSrc="/download-ios-en.svg"
-            imageAlt="Download on the App Store"
-            width={180}
-            height={60}
-          />
-          <StoreButton
-            href="https://play.google.com/store/apps/details?id=com.marcosld.cameratimer"
-            imageSrc="/download-google-en.png"
-            imageAlt="Download on Google Play"
-            width={200}
-            height={60}
-          />
+        <div className="mt-12 xl:mt-24">
+          <StoreButtons />
         </div>
       </div>
       <div className="flex justify-center items-center mt-12 md:mt-0">
@@ -56,9 +48,10 @@ export const Hero = () => (
           className="max-w-xs"
           src="/app-handstand.png"
           alt="App screenshot"
-          width={720}
-          height={1280}
-          priority
+          width={320}
+          height={630}
+          preload
+          loading="eager"
         />
       </div>
     </section>

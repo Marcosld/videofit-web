@@ -124,20 +124,20 @@ const images = [
 
 export const FeatureList = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-8">
+    <div className="flex flex-col max-w-6xl m-auto px-8">
       {content.map(({ title, points }, index) => (
         <section
           key={index}
-          className="pt-10 md:grid md:grid-cols-2 max-w-6xl odd:*:data-text:col-start-2 *:row-start-1"
+          className="pt-10 md:grid md:grid-cols-2 odd:*:data-text:col-start-2 *:row-start-1"
         >
           <FeatureCard key={index} title={title} points={points} />
           <div className="flex justify-center items-center pt-6">
             <Image
-              className="grow max-w-2xs hover:scale-105 transition-transform"
+              className="grow max-w-xs hover:scale-105 transition-transform"
               src={images[index]}
               alt="App screenshot"
-              width={720}
-              height={1080}
+              width={320}
+              height={630}
             />
           </div>
         </section>
@@ -145,5 +145,3 @@ export const FeatureList = () => {
     </div>
   );
 };
-
-// TODO: Review spacing on large screens. columns are not equal.

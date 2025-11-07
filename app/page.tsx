@@ -1,11 +1,13 @@
 import { FeatureList } from "@/components/feature-list";
 import { Hero } from "@/components/hero";
 
-// TODO: All translations. Store images with translations.
+// TODO: All translations. Store images with translations. QR code... alts... app screenshots...
 
-// TODO: Better to put a list of features
-// TODO: Contact and privacy policy links in footer
-// TODO: QR to download app
+// TODO: Perhaps header with logo and QR ?
+
+// TODO: SEO improvements, meta tags, open graph, mobile app seo, twitter cards...
+
+// TODO: Entering animations for text and stuff. Perhaps writing animation for main phrases.
 
 export default function Home() {
   return (

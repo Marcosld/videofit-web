@@ -16,7 +16,7 @@ export const StoreButton = ({
   height,
 }: Props) => (
   <a
-    className="rounded-lg hover:scale-105 transition-transform hover:shadow-lg shadow-gray-800/60"
+    className="flex rounded-xl hover:scale-105 transition-transform shadow-lg shadow-gray-800/60 active:scale-95"
     href={href}
     target="_blank"
     rel="noopener noreferrer"
