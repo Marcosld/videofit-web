@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
 import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html className="bg-amber-50" lang="en">
       <body className={montserrat.className}>
+        <Header />
         {children}
         <Footer />
         <Analytics />

@@ -1,11 +1,9 @@
 export default function PrivacyPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-10 text-gray-800 dark:text-gray-100">
+    <main className="max-w-6xl mx-auto px-6 pt-32 md:pt-56 pb-10 text-gray-800">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold mb-1">Privacy Policy for VideoFit</h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Last updated: August 11, 2025
-        </p>
+        <h1 className="text-3xl font-bold mb-1">Privacy Policy</h1>
+        <p className="text-sm text-gray-500">Last updated: November 07, 2025</p>
         <p className="mt-4">
           VideoFit (“the App”) is provided by us as a free tool. This Privacy
           Policy explains how we handle your information when you use the App.

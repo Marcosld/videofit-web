@@ -3,27 +3,8 @@ import { StoreButtons } from "./store-buttons";
 
 export const Hero = () => (
   <div className="flex justify-center bg-radial-[at_25%_50%] from-amber-50 via-pink-200 to-amber-50">
-    <section className="py-12 px-8 max-w-6xl md:grid md:grid-cols-2 min-h-screen">
+    <section className="pt-20 2xl:pt-10 pb-6 px-8 max-w-6xl md:grid md:grid-cols-2 min-h-screen">
       <div className="flex flex-col justify-center text-center items-center md:text-left md:items-start">
-        <div className="flex gap-4 justify-center md:justify-start items-center w-full">
-          <Image
-            src="/app-icon.png"
-            alt="App logo"
-            width={64}
-            height={64}
-            className="rounded-xl max-w-12 md:max-w-16"
-            preload
-            loading="eager"
-          />
-          <h1 className="text-3xl font-bold text-slate-800">VideoFit</h1>
-          <Image
-            className="hidden md:flex"
-            src="/website-qrcode.png"
-            alt="QR code to website"
-            width={120}
-            height={120}
-          />
-        </div>
         <div className="mt-8 xl:mt-16">
           <h1 className="text-4xl font-bold text-pink-600">
             Record yourself. Check your form. Track your progress.

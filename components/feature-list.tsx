@@ -131,7 +131,7 @@ export const FeatureList = () => {
           className="pt-10 md:grid md:grid-cols-2 odd:*:data-text:col-start-2 *:row-start-1"
         >
           <FeatureCard key={index} title={title} points={points} />
-          <div className="flex justify-center items-center pt-6">
+          <div className="flex justify-center items-center pt-6 md:pt-0">
             <Image
               className="grow max-w-xs hover:scale-105 transition-transform"
               src={images[index]}

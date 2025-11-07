@@ -1,13 +1,9 @@
 export default function TermsOfServicePage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-10 text-gray-800 dark:text-gray-100">
+    <main className="max-w-6xl mx-auto px-6 pt-32 md:pt-56 pb-10 text-gray-800">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold mb-1">
-          Terms of Service for VideoFit
-        </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Last updated: August 11, 2025
-        </p>
+        <h1 className="text-3xl font-bold mb-1">Terms of Service</h1>
+        <p className="text-sm text-gray-500">Last updated: November 07, 2025</p>
         <p className="mt-4">
           These Terms of Service (“Terms”) govern your use of the VideoFit
           application (“the App”) provided by us. By using the App, you agree to
