@@ -84,5 +84,11 @@
         "content": "If you have any questions about these Terms of Service, please contact us."
       }
     }
+  },
+  "Hero": {
+    "mainTitle": "Record yourself. Check your form. Track your progress.",
+    "subtitle": "There is nothing like seeing yourself in action to improve in a sports discipline.",
+    "description": "VideoFit is a free workout video recorder, timer and tracker for iOS and Android. Whether you train calisthenics, handstands, yoga, weightlifting or any other discipline, VideoFit will help you improve your form and technique.",
+    "imageAlt": "App screenshot recording a handstand"
   }
 }

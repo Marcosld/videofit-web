@@ -84,5 +84,11 @@
         "content": "Si tienes alguna pregunta sobre estos Términos de Servicio, por favor contacta con nosotros."
       }
     }
+  },
+  "Hero": {
+    "mainTitle": "Grábate. Revisa tu técnica. Sigue tu progreso.",
+    "subtitle": "No hay nada como verte en acción para mejorar en una disciplina deportiva.",
+    "description": "VideoFit es una aplicación gratuita para grabar, cronometrar y mantener el seguimiento de tus entrenamientos para iOS y Android. Ya sea que entrenes calistenia, handstands, yoga, levantamiento de pesas o cualquier otra disciplina, VideoFit te ayudará a mejorar tu forma y técnica.",
+    "imageAlt": "Captura de pantalla de la aplicación grabando un handstand"
   }
 }
