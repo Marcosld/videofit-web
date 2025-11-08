@@ -2,5 +2,87 @@
   "Metadata": {
     "title": "VideoFit: Workout video timer app, gym video log & workout tracker for calisthenics, handstands, yoga and weightlifting",
     "description": "Film yourself, check your form and track your progress with VideoFit. We include a video timer with countdown for your holds and a calendar to track your workouts over time. Instant video playback so you can review your form right after your set."
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: November 07, 2025",
+    "intro": "VideoFit (\"the App\") is provided by us as a free tool. This Privacy Policy explains how we handle your information when you use the App.",
+    "sections": {
+      "informationWeCollect": {
+        "title": "1. Information We Collect",
+        "content": "We do <strong>not</strong> collect, store, or share any personal or non-personal information from users of the App. All activities take place entirely on your device."
+      },
+      "devicePermissions": {
+        "title": "2. Device Permissions",
+        "content": "The App may request access to certain features on your device, such as the camera, microphone, or storage, in order to record or analyze video content. This access is used solely for functionality within the App and no data is uploaded, stored externally, or shared with anyone."
+      },
+      "useOfInformation": {
+        "title": "3. Use of Your Information",
+        "content": "Since we do not collect any information, we do not use your data for analytics, marketing, or any other purpose."
+      },
+      "thirdPartyServices": {
+        "title": "4. Third-Party Services",
+        "content": "The App does not use any third-party services (such as analytics tools, advertising networks, or SDKs) that collect data from you."
+      },
+      "dataSecurity": {
+        "title": "5. Data Security",
+        "content": "Although no data is transmitted or stored externally, we are committed to maintaining a high level of security and privacy in all future versions of the App. If any new features require data handling, this policy will be updated accordingly."
+      },
+      "childrensPrivacy": {
+        "title": "6. Children's Privacy",
+        "content": "The App is not directed toward children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can remove it."
+      },
+      "changesToPolicy": {
+        "title": "7. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. If we make changes, the updated version will be available within the App or on our official website. Significant changes will be clearly communicated to users."
+      },
+      "contactUs": {
+        "title": "8. Contact Us",
+        "content": "If you have any questions or concerns about this Privacy Policy, please contact us."
+      }
+    }
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: November 07, 2025",
+    "intro": "These Terms of Service (\"Terms\") govern your use of the VideoFit application (\"the App\") provided by us. By using the App, you agree to be bound by these Terms. Please read them carefully before using VideoFit.",
+    "sections": {
+      "useOfApp": {
+        "title": "1. Use of the App",
+        "content": "VideoFit is provided as a free tool to assist users in recording, tracking, or analyzing videos for fitness or related purposes. You agree to use the App only for lawful and personal use, and not for any commercial, harmful, or unauthorized activity."
+      },
+      "userResponsibilities": {
+        "title": "2. User Responsibilities",
+        "content": "You are responsible for maintaining the confidentiality of your device and ensuring that your use of the App complies with local laws and regulations. You agree not to misuse the App or attempt to interfere with its normal operation."
+      },
+      "intellectualProperty": {
+        "title": "3. Intellectual Property",
+        "content": "All content, trademarks, and materials available through the App are the property of VideoFit or its licensors. You may not copy, modify, or distribute any part of the App without prior written permission, except for personal, non-commercial use."
+      },
+      "disclaimerWarranties": {
+        "title": "4. Disclaimer of Warranties",
+        "content": "The App is provided \"as is\" and \"as available,\" without any warranties of any kind, either express or implied. We do not guarantee that the App will be error-free, uninterrupted, or suitable for your specific purposes."
+      },
+      "limitationLiability": {
+        "title": "5. Limitation of Liability",
+        "content": "To the maximum extent permitted by law, VideoFit and its developers shall not be liable for any damages arising from your use or inability to use the App, including but not limited to loss of data, fitness results, or device issues."
+      },
+      "modificationsService": {
+        "title": "6. Modifications to the Service",
+        "content": "We reserve the right to modify, suspend, or discontinue any aspect of the App at any time without prior notice. Updates or changes to the App may be automatically installed on your device."
+      },
+      "termination": {
+        "title": "7. Termination",
+        "content": "We may suspend or terminate your access to the App at our discretion if we believe you have violated these Terms. Upon termination, your right to use the App will cease immediately."
+      },
+      "governingLaw": {
+        "title": "8. Governing Law",
+        "content": "These Terms are governed by and interpreted in accordance with the laws of Spain, without regard to its conflict of law principles. Any disputes shall be resolved in the competent courts of Spain."
+      },
+      "contactUs": {
+        "title": "9. Contact Us",
+        "content": "If you have any questions about these Terms of Service, please contact us."
+      }
+    }
   }
 }
