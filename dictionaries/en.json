@@ -140,5 +140,13 @@
       "contact": "Contact"
     },
     "madeBy": "Made with ❤️ by Marcos Luis Delgado © {year}"
+  },
+  "StoreButtons": {
+    "iosAlt": "Download on the App Store",
+    "androidAlt": "Download on Google Play"
+  },
+  "Header": {
+    "appLogoAlt": "App logo",
+    "qrAlt": "QR code to website"
   }
 }
