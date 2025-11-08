@@ -132,5 +132,13 @@
         "regularUpdates": "Actualizaciones regulares con <bold>nuevas características</bold> basadas en el feedback de los usuarios"
       }
     }
+  },
+  "Footer": {
+    "links": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "contact": "Contacto"
+    },
+    "madeBy": "Hecho con ❤️ por Marcos Luis Delgado © {year}"
   }
 }

@@ -1,5 +1,6 @@
 import { StoreButtons } from "@/components/store-buttons";
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 type FooterLinkProps = {
   href: string;
@@ -15,18 +16,23 @@ const FooterLink = ({ href, children }: FooterLinkProps) => (
   </Link>
 );
 
-export const Footer = () => (
-  <footer className="flex flex-col gap-6 justify-center items-center my-8 md:my-12 px-8">
-    <div className="mb-6 md:mb-8">
-      <StoreButtons />
-    </div>
-    <div className="flex gap-6">
-      <FooterLink href="/privacy">Privacy Policy</FooterLink>
-      <FooterLink href="/terms">Terms of Service</FooterLink>
-      <FooterLink href="mailto:marcosluisdel@gmail.com">Contact</FooterLink>
-    </div>
-    <p className="text-xs">
-      Made with ❤️ by Marcos Luis Delgado © {new Date().getFullYear()}
-    </p>
-  </footer>
-);
+export const Footer = () => {
+  const t = useTranslations("Footer");
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="flex flex-col gap-6 justify-center items-center my-8 md:my-12 px-8">
+      <div className="mb-6 md:mb-8">
+        <StoreButtons />
+      </div>
+      <div className="flex gap-6">
+        <FooterLink href="/privacy">{t("links.privacy")}</FooterLink>
+        <FooterLink href="/terms">{t("links.terms")}</FooterLink>
+        <FooterLink href="mailto:marcosluisdel@gmail.com">
+          {t("links.contact")}
+        </FooterLink>
+      </div>
+      <p className="text-xs">{t("madeBy", { year })}</p>
+    </footer>
+  );
+};
