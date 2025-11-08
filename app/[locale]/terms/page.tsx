@@ -1,4 +1,11 @@
-export default function TermsOfServicePage() {
+import { Locale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+export default async function TermsOfServicePage({
+  params,
+}: PageProps<"/[locale]">) {
+  const { locale } = await params;
+  setRequestLocale(locale as Locale);
+
   return (
     <main className="max-w-6xl mx-auto px-6 pt-32 md:pt-56 pb-10 text-gray-800">
       <header className="mb-8">

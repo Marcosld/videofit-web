@@ -1,5 +1,5 @@
 import { StoreButtons } from "@/components/store-buttons";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 type FooterLinkProps = {
   href: string;

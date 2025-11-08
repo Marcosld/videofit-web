@@ -1,5 +1,5 @@
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import Link from "next/link";
 
 export const Header = () => (
   <header className="absolute w-full flex justify-center items-center">
