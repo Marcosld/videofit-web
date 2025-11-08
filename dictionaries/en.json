@@ -88,7 +88,49 @@
   "Hero": {
     "mainTitle": "Record yourself. Check your form. Track your progress.",
     "subtitle": "There is nothing like seeing yourself in action to improve in a sports discipline.",
-    "description": "VideoFit is a free workout video recorder, timer and tracker for iOS and Android. Whether you train calisthenics, handstands, yoga, weightlifting or any other discipline, VideoFit will help you improve your form and technique.",
+    "description": "VideoFit is a free workout video recorder, timer and tracker for iOS and Android. Whether you train calisthenics, handstands, yoga, weightlifting or any other discipline, VideoFit will help you improve your form and technique and organize your training videos.",
     "imageAlt": "App screenshot recording a handstand"
+  },
+  "FeatureList": {
+    "recording": {
+      "imageAlt": "App screenshot recording with a timer",
+      "title": "<highlight>Record yourself</highlight> while training — like a pro.",
+      "points": {
+        "customTimers": "<accent>Set custom timers</accent> for each exercise and recording with zero hassle",
+        "audioCountdowns": "Get <accent>audio countdowns</accent> for every isometric hold",
+        "cleanInterface": "A clean, intuitive interface — just tap <bold>record</bold> and crush your set!",
+        "instantSave": "All your videos are <accent>instantly saved</accent> to your gallery. No water marks, no delays."
+      }
+    },
+    "reviewing": {
+      "imageAlt": "App screenshot scrubbing through a video",
+      "title": "Instantly review your form",
+      "points": {
+        "instantReplay": "Replay your set <accent>the moment you finish</accent>",
+        "noWastedStorage": "Keep your best takes, ditch the rest — <bold>no wasted storage</bold>",
+        "perfectTechnique": "Scrub through your video to <accent>perfect your technique</accent>",
+        "frameByFrame": "Use a long press for <bold>frame-by-frame precision</bold>"
+      }
+    },
+    "tracking": {
+      "imageAlt": "App screenshot filtering recordings by date",
+      "title": "Track your progress over time",
+      "points": {
+        "calendarView": "See every session in a <accent>beautiful calendar view</accent>",
+        "findByDate": "Find any recording by date — <bold>instantly</bold>",
+        "confidenceGrow": "Watch your form evolve and your <accent>confidence grow</accent>",
+        "trackJourney": "Stay inspired by <bold>tracking your journey</bold> to mastery"
+      }
+    },
+    "customization": {
+      "imageAlt": "App screenshot in the settings screen",
+      "title": "Fully customizable",
+      "points": {
+        "flexibleSettings": "Tailor the app to your needs with <accent>flexible settings</accent>",
+        "switchSettings": "Quickly <bold>switch timer settings</bold> from the recording screen",
+        "adFreeExperience": "Enjoy a <accent>clean, ad-free experience</accent> focused on your training",
+        "regularUpdates": "Regular updates with <bold>new features</bold> based on user feedback"
+      }
+    }
   }
 }

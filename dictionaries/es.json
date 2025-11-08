@@ -88,7 +88,49 @@
   "Hero": {
     "mainTitle": "Grábate. Revisa tu técnica. Sigue tu progreso.",
     "subtitle": "No hay nada como verte en acción para mejorar en una disciplina deportiva.",
-    "description": "VideoFit es una aplicación gratuita para grabar, cronometrar y mantener el seguimiento de tus entrenamientos para iOS y Android. Ya sea que entrenes calistenia, handstands, yoga, levantamiento de pesas o cualquier otra disciplina, VideoFit te ayudará a mejorar tu forma y técnica.",
+    "description": "VideoFit es una aplicación gratuita para grabar, cronometrar y mantener el seguimiento de tus entrenamientos para iOS y Android. Ya sea que entrenes calistenia, handstands, yoga, levantamiento de pesas o cualquier otra disciplina, VideoFit te ayudará a mejorar tu forma y técnica y a organizar tus videos de entrenamiento.",
     "imageAlt": "Captura de pantalla de la aplicación grabando un handstand"
+  },
+  "FeatureList": {
+    "recording": {
+      "imageAlt": "Captura de pantalla de la aplicación grabando con un temporizador",
+      "title": "<highlight>Grábate</highlight> mientras entrenas — como un pro.",
+      "points": {
+        "customTimers": "<accent>Configura temporizadores personalizados</accent> para cada ejercicio y grabación sin complicaciones",
+        "audioCountdowns": "Escucha <accent>cuentas regresivas de audio</accent> para cada ejercicio isométrico",
+        "cleanInterface": "Una interfaz limpia e intuitiva — ¡solo pulsa <bold>grabar</bold> y concéntrate en tu próximo ejercicio!",
+        "instantSave": "Todos los videos se <accent>guardan inmediatamente</accent> en la galería de tu teléfono. Sin marcas de agua, sin demoras."
+      }
+    },
+    "reviewing": {
+      "imageAlt": "Captura de pantalla de la aplicación navegando por un video",
+      "title": "Revisa tu técnica al instante",
+      "points": {
+        "instantReplay": "Revisa tu serie <accent>en el momento que termines</accent>",
+        "noWastedStorage": "Mantén tus mejores tomas, desecha el resto — <bold>sin desperdiciar almacenamiento</bold>",
+        "perfectTechnique": "Navega por tu video para <accent>perfeccionar tu técnica</accent>",
+        "frameByFrame": "Usa una presión larga para <bold>avanzar fotograma a fotograma</bold>"
+      }
+    },
+    "tracking": {
+      "imageAlt": "Captura de pantalla de la aplicación filtrando grabaciones por fecha",
+      "title": "Sigue tu progreso a lo largo del tiempo",
+      "points": {
+        "calendarView": "Ve cada sesión en una <accent>hermosa vista de calendario</accent>",
+        "findByDate": "Encuentra cualquier grabación por fecha — <bold>al instante</bold>",
+        "confidenceGrow": "Observa cómo evoluciona tu técnica y cómo <accent>crece tu confianza</accent>",
+        "trackJourney": "Mantente inspirado <bold>siguiendo tu camino</bold> hacia la maestría"
+      }
+    },
+    "customization": {
+      "imageAlt": "Captura de pantalla de la aplicación en la pantalla de configuración",
+      "title": "Completamente personalizable",
+      "points": {
+        "flexibleSettings": "Adapta la aplicación a tus necesidades con <accent>configuraciones flexibles</accent>",
+        "switchSettings": "Rápidamente <bold>cambia la configuración del temporizador</bold> desde la pantalla de grabación",
+        "adFreeExperience": "Disfruta de una <accent>experiencia limpia y sin anuncios</accent> enfocada en tu entrenamiento",
+        "regularUpdates": "Actualizaciones regulares con <bold>nuevas características</bold> basadas en el feedback de los usuarios"
+      }
+    }
   }
 }
