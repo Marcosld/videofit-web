@@ -10,8 +10,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
-//TODO: Why thumbnail does not appear on google ??
-
 const montserrat = Montserrat({
   subsets: ["latin"],
 });
@@ -31,6 +29,16 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    keywords: t("keywords"),
+    openGraph: {
+      type: "website",
+      locale: locale,
+      alternateLocale: routing.locales.filter((loc) => loc !== locale),
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 
