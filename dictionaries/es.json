@@ -97,10 +97,10 @@
       "imageAlt": "Captura de pantalla de la aplicación grabando con un temporizador",
       "title": "<highlight>Grábate</highlight> mientras entrenas — como un pro.",
       "points": {
-        "customTimers": "<accent>Configura temporizadores personalizados</accent> para cada ejercicio y grabación sin complicaciones",
-        "audioCountdowns": "Escucha <accent>cuentas regresivas de audio</accent> para cada ejercicio isométrico",
+        "customTimers": "Configura <accent>temporizadores personalizados</accent> para cada ejercicio y grabación sin complicaciones",
+        "audioCountdowns": "Escucha <accent>cuentas regresivas de audio</accent> para tus ejercicios isométricos",
         "cleanInterface": "Una interfaz limpia e intuitiva — ¡solo pulsa <bold>grabar</bold> y concéntrate en tu próximo ejercicio!",
-        "instantSave": "Todos los videos se <accent>guardan inmediatamente</accent> en la galería de tu teléfono. Sin marcas de agua, sin demoras."
+        "instantSave": "Todos tus videos <accent>guardados al instante</accent> en el <bold>álbum VideoFit</bold> de la galería de tu teléfono. Sin marcas de agua, sin esperas."
       }
     },
     "reviewing": {
