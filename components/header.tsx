@@ -21,7 +21,7 @@ export const Header = () => {
           preload
           loading="eager"
         />
-        <h1 className="text-3xl font-bold text-slate-800">VideoFit</h1>
+        <h2 className="text-3xl font-bold text-slate-800">VideoFit</h2>
         <Image
           className="hidden md:flex ml-10"
           src={`/${locale}/website-qrcode.png`}
