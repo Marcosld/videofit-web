@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { IconCheck } from "./icon-check";
 
@@ -32,14 +32,15 @@ const richTranslator = {
 };
 
 const images = [
-  "/app-front-lever.png",
-  "/app-jump.png",
-  "/app-calendar.png",
-  "/app-settings.png",
+  "app-front-lever.png",
+  "app-jump.png",
+  "app-calendar.png",
+  "app-settings.png",
 ];
 
 export const FeatureList = () => {
   const t = useTranslations("FeatureList");
+  const locale = useLocale();
 
   const features = [
     {
@@ -98,7 +99,7 @@ export const FeatureList = () => {
           <div className="flex justify-center items-center pt-6 md:pt-0">
             <Image
               className="grow max-w-xs hover:scale-105 transition-transform"
-              src={images[index]}
+              src={`/${locale}/${images[index]}`}
               alt={imageAlts[index]}
               width={320}
               height={630}
