@@ -1,6 +1,11 @@
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import * as React from "react";
 import { IconCheck } from "./icon-check";
+
+gsap.registerPlugin(ScrollTrigger);
 
 type FeatureCardProps = {
   title: React.ReactNode;
@@ -31,14 +36,9 @@ const richTranslator = {
   bold: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
 };
 
-const images = [
-  "app-front-lever.png",
-  "app-jump.png",
-  "app-calendar.png",
-  "app-settings.png",
-];
-
 export const FeatureList = () => {
+  const containerRef = React.useRef(null);
+  const imageRef = React.useRef(null);
   const t = useTranslations("FeatureList");
   const locale = useLocale();
 
@@ -51,6 +51,8 @@ export const FeatureList = () => {
         t.rich("recording.points.cleanInterface", richTranslator),
         t.rich("recording.points.instantSave", richTranslator),
       ],
+      image: "app-front-lever.png",
+      imageAlt: t("recording.imageAlt"),
     },
     {
       title: t.rich("reviewing.title", richTranslator),
@@ -60,6 +62,8 @@ export const FeatureList = () => {
         t.rich("reviewing.points.perfectTechnique", richTranslator),
         t.rich("reviewing.points.frameByFrame", richTranslator),
       ],
+      image: "app-jump.png",
+      imageAlt: t("reviewing.imageAlt"),
     },
     {
       title: t.rich("tracking.title", richTranslator),
@@ -69,6 +73,8 @@ export const FeatureList = () => {
         t.rich("tracking.points.confidenceGrow", richTranslator),
         t.rich("tracking.points.trackJourney", richTranslator),
       ],
+      image: "app-calendar.png",
+      imageAlt: t("tracking.imageAlt"),
     },
     {
       title: t.rich("customization.title", richTranslator),
@@ -78,29 +84,24 @@ export const FeatureList = () => {
         t.rich("customization.points.adFreeExperience", richTranslator),
         t.rich("customization.points.regularUpdates", richTranslator),
       ],
+      image: "app-settings.png",
+      imageAlt: t("customization.imageAlt"),
     },
-  ];
-
-  const imageAlts = [
-    t("recording.imageAlt"),
-    t("reviewing.imageAlt"),
-    t("tracking.imageAlt"),
-    t("customization.imageAlt"),
   ];
 
   return (
     <div className="flex flex-col max-w-6xl m-auto px-8">
-      {features.map((f, index) => (
+      {features.map((feature, index) => (
         <section
           key={index}
           className="pt-10 md:grid md:grid-cols-2 odd:*:data-text:col-start-2 *:row-start-1"
         >
-          <FeatureCard title={f.title} points={f.points} />
+          <FeatureCard title={feature.title} points={feature.points} />
           <div className="flex justify-center items-center pt-6 md:pt-0">
             <Image
               className="grow max-w-xs hover:scale-105 transition-transform"
-              src={`/${locale}/${images[index]}`}
-              alt={imageAlts[index]}
+              src={`/${locale}/${feature.image}`}
+              alt={feature.imageAlt}
               width={320}
               height={630}
             />
