@@ -41,7 +41,7 @@ const FeatureCard = ({ title, points, index, onActive }: FeatureCardProps) => {
       className="flex flex-col gap-9 2xl:gap-12 justify-center"
     >
       <motion.h2
-        className="text-3xl font-bold text-gray-800"
+        className="text-3xl font-bold text-gray-800 translate-z-0" // Added translate-z-0 to fix blur issue on Mobile
         initial={{ filter: "blur(10px)" }}
         whileInView={{ filter: "blur(0px)" }}
         transition={{ delay: 0.1 }}
