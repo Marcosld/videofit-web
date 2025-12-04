@@ -1,30 +1,141 @@
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+"use client";
+
+import classNames from "classnames";
+import {
+  motion,
+  MotionValue,
+  useInView,
+  useScroll,
+  useTransform,
+} from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import * as React from "react";
+import style from "./feature-list.module.css";
 import { IconCheck } from "./icon-check";
-
-gsap.registerPlugin(ScrollTrigger);
 
 type FeatureCardProps = {
   title: React.ReactNode;
   points: React.ReactNode[];
+  index: number;
+  onActive: (index: number) => void;
 };
 
-const FeatureCard = ({ title, points }: FeatureCardProps) => (
-  <div data-text className="flex flex-col gap-9 justify-center">
-    <h2 className="text-3xl font-bold text-gray-800">{title}</h2>
-    <ul className="text-gray-600">
-      {points.map((point, index) => (
-        <li key={index} className="mt-1">
-          <IconCheck className="w-6 h-6 fill-gray-800 inline-block mr-2" />
-          {point}
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+const FeatureCard = ({ title, points, index, onActive }: FeatureCardProps) => {
+  const ref = React.useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref, {
+    amount: 0.5,
+    margin: "-20% 0px -20% 0px",
+  });
+
+  React.useEffect(() => {
+    if (isInView) {
+      onActive(index);
+    }
+  }, [isInView, index, onActive]);
+
+  return (
+    <div
+      ref={ref}
+      data-text
+      className="flex flex-col gap-9 2xl:gap-12 justify-center"
+    >
+      <motion.h2
+        className="text-3xl font-bold text-gray-800"
+        initial={{ filter: "blur(10px)" }}
+        whileInView={{ filter: "blur(0px)" }}
+        transition={{ delay: 0.1 }}
+        viewport={{ once: true }}
+      >
+        {title}
+      </motion.h2>
+      <ul>
+        {points.map((point, index) => (
+          <motion.li
+            key={index}
+            className="mt-1 2xl:mt-3"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: index * 0.12 + 0.6 }}
+            viewport={{ once: true }}
+          >
+            <IconCheck className="w-6 h-6 fill-gray-800 inline-block mr-2" />
+            {point}
+          </motion.li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+type FeatureScreenshotProps = {
+  imageSrc: string;
+  imageAlt: string;
+  active: boolean;
+  containerScrollYProgress: MotionValue<number>;
+};
+
+const FeatureScreenshot = ({
+  imageSrc,
+  imageAlt,
+  active,
+  containerScrollYProgress,
+}: FeatureScreenshotProps) => {
+  const imageRef = React.useRef(null);
+  const locale = useLocale();
+  const { scrollYProgress: imageScrollYProgress } = useScroll({
+    target: imageRef,
+    offset: ["start end", "end end"],
+  });
+  const [useTransformParams, setUseTransformParams] = React.useState<
+    [MotionValue<number>, number[], number[]]
+  >([containerScrollYProgress, [0, 1], [-2, 2]]);
+  const rotate = useTransform<number, number>(...useTransformParams);
+  const scale = useTransform(
+    imageScrollYProgress,
+    [0, 0.5, 1],
+    [0.95, 1, 0.95]
+  );
+
+  React.useEffect(() => {
+    if (!window.matchMedia("(min-width: 48rem)").matches) {
+      setUseTransformParams([imageScrollYProgress, [0, 0.5], [-5, 0]]);
+    }
+  }, [imageScrollYProgress]);
+
+  return (
+    <motion.div
+      className={classNames(
+        "flex justify-center items-center pb-10 md:pb-0 pt-6 md:pt-0 md:sticky md:top-0 md:col-start-1 md:row-start-1",
+        style.featureScreenshot
+      )}
+      initial={{
+        opacity: "var(--initial-opacity)",
+        display: "var(--initial-display)",
+      }}
+      animate={{
+        opacity: active ? "var(--final-opacity)" : "var(--initial-opacity)",
+        display: active ? "var(--final-display)" : "var(--initial-display)",
+      }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="flex justify-center items-center hover:scale-105 transition-transform"
+        style={{ rotate, scale }}
+      >
+        <div className="absolute w-[290px] h-[600px] rounded-[3rem] shadow-2xl/100" />
+        <Image
+          ref={imageRef}
+          className="grow max-w-xs"
+          src={`/${locale}/${imageSrc}`}
+          alt={imageAlt}
+          width={320}
+          height={630}
+        />
+      </motion.div>
+    </motion.div>
+  );
+};
 
 const richTranslator = {
   highlight: (chunks: React.ReactNode) => (
@@ -38,9 +149,8 @@ const richTranslator = {
 
 export const FeatureList = () => {
   const containerRef = React.useRef(null);
-  const imageRef = React.useRef(null);
   const t = useTranslations("FeatureList");
-  const locale = useLocale();
+  const [activeIndex, setActiveIndex] = React.useState(0);
 
   const features = [
     {
@@ -89,25 +199,34 @@ export const FeatureList = () => {
     },
   ];
 
+  const { scrollYProgress } = useScroll({ target: containerRef });
+
   return (
-    <div className="flex flex-col max-w-6xl m-auto px-8">
-      {features.map((feature, index) => (
-        <section
-          key={index}
-          className="pt-10 md:grid md:grid-cols-2 odd:*:data-text:col-start-2 *:row-start-1"
-        >
-          <FeatureCard title={feature.title} points={feature.points} />
-          <div className="flex justify-center items-center pt-6 md:pt-0">
-            <Image
-              className="grow max-w-xs hover:scale-105 transition-transform"
-              src={`/${locale}/${feature.image}`}
-              alt={feature.imageAlt}
-              width={320}
-              height={630}
+    <div className="max-w-7xl m-auto px-8">
+      <section
+        ref={containerRef}
+        className={"md:grid md:grid-cols-2 min-h-screen"}
+      >
+        {features.map((feature, index) => (
+          <React.Fragment key={index}>
+            <div className="md:min-h-screen flex justify-center items-center col-start-2 snap-center pt-10 md:pt-0">
+              <FeatureCard
+                title={feature.title}
+                points={feature.points}
+                index={index}
+                onActive={setActiveIndex}
+              />
+            </div>
+
+            <FeatureScreenshot
+              imageSrc={feature.image}
+              imageAlt={feature.imageAlt}
+              active={activeIndex === index}
+              containerScrollYProgress={scrollYProgress}
             />
-          </div>
-        </section>
-      ))}
+          </React.Fragment>
+        ))}
+      </section>
     </div>
   );
 };

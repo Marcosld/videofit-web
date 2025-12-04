@@ -10,7 +10,7 @@ export const Header = () => {
     <header className="absolute w-full flex justify-center items-center">
       <Link
         href="/"
-        className="flex gap-4 justify-center md:justify-start pt-6 px-8 2xl:pt-12 items-center w-full max-w-6xl"
+        className="flex gap-4 justify-center md:justify-start pt-6 px-8 2xl:pt-12 items-center w-full max-w-7xl"
       >
         <Image
           src="/app-icon.png"

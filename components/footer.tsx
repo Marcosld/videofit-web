@@ -1,6 +1,7 @@
 import { StoreButtons } from "@/components/store-buttons";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { FooterContainer } from "./footer-container";
 
 type FooterLinkProps = {
   href: string;
@@ -21,7 +22,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col gap-6 justify-center items-center my-8 md:my-12 px-8">
+    <FooterContainer className="flex flex-col gap-6 justify-center items-center my-8 md:my-12 px-8">
       <div className="mb-6 md:mb-8">
         <StoreButtons />
       </div>
@@ -33,6 +34,6 @@ export const Footer = () => {
         </FooterLink>
       </div>
       <p className="text-xs">{t("madeBy", { year })}</p>
-    </footer>
+    </FooterContainer>
   );
 };

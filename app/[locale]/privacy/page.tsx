@@ -46,7 +46,7 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]">) {
   ];
 
   return (
-    <main className="max-w-6xl mx-auto px-6 pt-32 md:pt-56 pb-10 text-gray-800">
+    <main className="max-w-7xl mx-auto px-6 pt-32 md:pt-56 pb-10 text-gray-800">
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-1">{t("title")}</h1>
         <p className="text-sm text-gray-500">{t("lastUpdated")}</p>

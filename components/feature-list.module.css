@@ -1,0 +1,15 @@
+.featureScreenshot {
+  --initial-opacity: 1;
+  --initial-display: flex;
+  --final-opacity: 1;
+  --final-display: flex;
+}
+
+@media (min-width: 48rem) {
+  .featureScreenshot {
+    --initial-opacity: 0;
+    --initial-display: none;
+    --final-opacity: 1;
+    --final-display: flex;
+  }
+}
