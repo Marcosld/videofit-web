@@ -115,6 +115,7 @@
     },
     "tracking": {
       "imageAlt": "App screenshot filtering recordings by date",
+      "imageAlt2": "App screenshot showing a yearly calendar",
       "title": "Track your progress over time",
       "points": {
         "calendarView": "See every session in a <accent>beautiful calendar view</accent>",

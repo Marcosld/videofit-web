@@ -115,6 +115,7 @@
     },
     "tracking": {
       "imageAlt": "Captura de pantalla de la aplicación filtrando grabaciones por fecha",
+      "imageAlt2": "Captura de pantalla de la aplicación mostrando un calendario anual",
       "title": "Sigue tu progreso a lo largo del tiempo",
       "points": {
         "calendarView": "Ve cada sesión en una <accent>hermosa vista de calendario</accent>",

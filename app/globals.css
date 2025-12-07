@@ -3,3 +3,7 @@
 html {
   @apply md:snap-mandatory md:snap-y;
 }
+
+@theme {
+  --breakpoint-xs: 384px;
+}

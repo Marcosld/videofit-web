@@ -1,11 +1,12 @@
 import * as motion from "motion/react-client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { StoreButtons } from "./store-buttons";
 import { WordsPullUp } from "./words-pull-up";
 
 export const Hero = () => {
   const t = useTranslations("Hero");
+  const locale = useLocale();
 
   return (
     <div className="flex justify-center bg-radial-[at_25%_50%] from-amber-50 via-pink-200 to-amber-50 snap-center">
@@ -42,14 +43,23 @@ export const Hero = () => {
           </motion.div>
         </div>
         <motion.div
-          className="flex justify-center items-center mt-12 md:mt-0"
+          className="relative flex justify-center items-center mt-12 md:mt-0"
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2 }}
         >
           <Image
-            className="max-w-xs"
+            className="max-w-xs xl:ml-20 xl:z-10 xl:-rotate-3"
             src="/app-handstand.png"
+            alt={t("imageAlt")}
+            width={320}
+            height={630}
+            preload
+            loading="eager"
+          />
+          <Image
+            className="max-w-xs hidden xl:flex xl:-ml-20 xl:rotate-3"
+            src={`/${locale}/app-year-calendar.png`}
             alt={t("imageAlt")}
             width={320}
             height={630}
