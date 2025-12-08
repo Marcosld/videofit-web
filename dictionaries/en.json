@@ -139,7 +139,8 @@
     "links": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
-      "contact": "Contact"
+      "contact": "Contact",
+      "about": "About Me"
     },
     "madeBy": "Made with ❤️ by Marcos Luis Delgado © {year}"
   },
@@ -150,5 +151,10 @@
   "Header": {
     "appLogoAlt": "App logo",
     "qrAlt": "QR code to website"
+  },
+  "About": {
+    "imageAlt": "Marcos, creator of VideoFit",
+    "title": "Hi! I'm <accent>Marcos</accent>, the <highlight>creator of VideoFit.</highlight>",
+    "intro": "I'm a software developer from Spain and a bodyweight fitness enthusiast. I've been training calisthenics and handstands for 7+ years. Since the beginning it was <bold>crucial for me to record myself</bold> to check my form, look for imbalances and track my progress. <bold>It all started with my phone's camera</bold>, then I created an app that would let me set <bold>timers for my isometric holds</bold> while recording myself. After some years of using it for myself, that idea evolved into VideoFit, which I published to help others on their fitness journey."
   }
 }

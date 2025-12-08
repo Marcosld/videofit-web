@@ -1,5 +1,6 @@
 "use client";
 
+import { richFormatter } from "@/utils/rich-formatter";
 import classNames from "classnames";
 import {
   motion,
@@ -137,16 +138,6 @@ const FeatureScreenshot = ({
   );
 };
 
-const richTranslator = {
-  highlight: (chunks: React.ReactNode) => (
-    <span className="bg-pink-600/60 px-1 rounded">{chunks}</span>
-  ),
-  accent: (chunks: React.ReactNode) => (
-    <span className="text-pink-600 font-bold">{chunks}</span>
-  ),
-  bold: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
-};
-
 export const FeatureList = () => {
   const containerRef = React.useRef(null);
   const t = useTranslations("FeatureList");
@@ -154,12 +145,12 @@ export const FeatureList = () => {
 
   const features = [
     {
-      title: t.rich("recording.title", richTranslator),
+      title: t.rich("recording.title", richFormatter),
       points: [
-        t.rich("recording.points.customTimers", richTranslator),
-        t.rich("recording.points.audioCountdowns", richTranslator),
-        t.rich("recording.points.cleanInterface", richTranslator),
-        t.rich("recording.points.instantSave", richTranslator),
+        t.rich("recording.points.customTimers", richFormatter),
+        t.rich("recording.points.audioCountdowns", richFormatter),
+        t.rich("recording.points.cleanInterface", richFormatter),
+        t.rich("recording.points.instantSave", richFormatter),
       ],
       renderImage: (active: boolean) => (
         <FeatureScreenshot
@@ -171,12 +162,12 @@ export const FeatureList = () => {
       ),
     },
     {
-      title: t.rich("reviewing.title", richTranslator),
+      title: t.rich("reviewing.title", richFormatter),
       points: [
-        t.rich("reviewing.points.instantReplay", richTranslator),
-        t.rich("reviewing.points.noWastedStorage", richTranslator),
-        t.rich("reviewing.points.perfectTechnique", richTranslator),
-        t.rich("reviewing.points.frameByFrame", richTranslator),
+        t.rich("reviewing.points.instantReplay", richFormatter),
+        t.rich("reviewing.points.noWastedStorage", richFormatter),
+        t.rich("reviewing.points.perfectTechnique", richFormatter),
+        t.rich("reviewing.points.frameByFrame", richFormatter),
       ],
       renderImage: (active: boolean) => (
         <FeatureScreenshot
@@ -188,12 +179,12 @@ export const FeatureList = () => {
       ),
     },
     {
-      title: t.rich("tracking.title", richTranslator),
+      title: t.rich("tracking.title", richFormatter),
       points: [
-        t.rich("tracking.points.calendarView", richTranslator),
-        t.rich("tracking.points.findByDate", richTranslator),
-        t.rich("tracking.points.confidenceGrow", richTranslator),
-        t.rich("tracking.points.trackJourney", richTranslator),
+        t.rich("tracking.points.calendarView", richFormatter),
+        t.rich("tracking.points.findByDate", richFormatter),
+        t.rich("tracking.points.confidenceGrow", richFormatter),
+        t.rich("tracking.points.trackJourney", richFormatter),
       ],
       renderImage: (active: boolean) => (
         <div className="relative md:sticky md:top-0 md:col-start-1 md:row-start-1 flex items-center justify-center max-w-xs ml-auto mr-auto md:max-w-full">
@@ -217,12 +208,12 @@ export const FeatureList = () => {
       ),
     },
     {
-      title: t.rich("customization.title", richTranslator),
+      title: t.rich("customization.title", richFormatter),
       points: [
-        t.rich("customization.points.flexibleSettings", richTranslator),
-        t.rich("customization.points.switchSettings", richTranslator),
-        t.rich("customization.points.adFreeExperience", richTranslator),
-        t.rich("customization.points.regularUpdates", richTranslator),
+        t.rich("customization.points.flexibleSettings", richFormatter),
+        t.rich("customization.points.switchSettings", richFormatter),
+        t.rich("customization.points.adFreeExperience", richFormatter),
+        t.rich("customization.points.regularUpdates", richFormatter),
       ],
       renderImage: (active: boolean) => (
         <FeatureScreenshot

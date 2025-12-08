@@ -26,12 +26,17 @@ export const Footer = () => {
       <div className="mb-6 md:mb-8">
         <StoreButtons />
       </div>
-      <div className="flex gap-6">
-        <FooterLink href="/privacy">{t("links.privacy")}</FooterLink>
-        <FooterLink href="/terms">{t("links.terms")}</FooterLink>
-        <FooterLink href="mailto:marcosluisdel@gmail.com">
-          {t("links.contact")}
-        </FooterLink>
+      <div className="flex gap-14">
+        <div className="flex flex-col gap-2">
+          <FooterLink href="/privacy">{t("links.privacy")}</FooterLink>
+          <FooterLink href="/terms">{t("links.terms")}</FooterLink>
+        </div>
+        <div className="flex flex-col gap-2">
+          <FooterLink href="mailto:marcosluisdel@gmail.com">
+            {t("links.contact")}
+          </FooterLink>
+          <FooterLink href="/about">{t("links.about")}</FooterLink>
+        </div>
       </div>
       <p className="text-xs">{t("madeBy", { year })}</p>
     </FooterContainer>
