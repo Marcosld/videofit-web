@@ -95,7 +95,7 @@ const FeatureScreenshot = ({
   const scale = useTransform(
     imageScrollYProgress,
     [0, 0.5, 1],
-    [0.95, 1, 0.95]
+    [0.95, 1, 0.95],
   );
 
   React.useEffect(() => {
@@ -108,7 +108,7 @@ const FeatureScreenshot = ({
     <motion.div
       className={classNames(
         "flex justify-center items-center pb-10 md:pb-0 pt-6 md:pt-0 md:sticky md:top-0 md:col-start-1 md:row-start-1 hover:z-10 active:z-10",
-        style.featureScreenshot
+        style.featureScreenshot,
       )}
       initial={{
         opacity: "var(--initial-opacity)",
@@ -132,6 +132,7 @@ const FeatureScreenshot = ({
           alt={imageAlt}
           width={320}
           height={630}
+          loading="eager"
         />
       </motion.div>
     </motion.div>
@@ -171,7 +172,7 @@ export const FeatureList = () => {
       ],
       renderImage: (active: boolean) => (
         <FeatureScreenshot
-          imageSrc="app-jump.png"
+          imageSrc="app-player.png"
           imageAlt={t("reviewing.imageAlt")}
           active={active}
           containerScrollYProgress={scrollYProgress}
@@ -198,7 +199,7 @@ export const FeatureList = () => {
           </div>
           <div className="ml-10 xl:ml-32">
             <FeatureScreenshot
-              imageSrc="app-calendar.png"
+              imageSrc="app-filter.png"
               imageAlt={t("tracking.imageAlt")}
               active={active}
               containerScrollYProgress={scrollYProgress}
@@ -217,7 +218,7 @@ export const FeatureList = () => {
       ],
       renderImage: (active: boolean) => (
         <FeatureScreenshot
-          imageSrc="app-settings.png"
+          imageSrc="app-config.png"
           imageAlt={t("customization.imageAlt")}
           active={active}
           containerScrollYProgress={scrollYProgress}

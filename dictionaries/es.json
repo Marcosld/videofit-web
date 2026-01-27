@@ -105,10 +105,10 @@
     },
     "reviewing": {
       "imageAlt": "Captura de pantalla de la aplicación navegando por un video",
-      "title": "Revisa tu técnica al instante",
+      "title": "Revisa tu técnica y <highlight>guarda o almacena temporalmente</highlight> tus grabaciones.",
       "points": {
         "instantReplay": "Revisa tu serie <accent>en el momento que termines</accent>",
-        "noWastedStorage": "Mantén tus mejores tomas, desecha el resto — <bold>sin desperdiciar almacenamiento</bold>",
+        "noWastedStorage": "Guarda permanentemente o <accent>almacena temporalmente</accent> tus grabaciones para <bold>no desperdiciar espacio</bold> en tu dispositivo gracias a la eliminación automática configurable",
         "perfectTechnique": "Navega por tu video para <accent>perfeccionar tu técnica</accent>",
         "frameByFrame": "Usa una presión larga para <bold>avanzar fotograma a fotograma</bold>"
       }

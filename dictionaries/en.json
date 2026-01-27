@@ -105,10 +105,10 @@
     },
     "reviewing": {
       "imageAlt": "App screenshot scrubbing through a video",
-      "title": "Instantly review your form",
+      "title": "Review your technique and <highlight>save or temporarily store</highlight> your recordings.",
       "points": {
         "instantReplay": "Replay your set <accent>the moment you finish</accent>",
-        "noWastedStorage": "Keep your best takes, ditch the rest — <bold>no wasted storage</bold>",
+        "noWastedStorage": "Save permanently or <accent>temporarily store</accent> your recordings to <bold>avoid wasting storage</bold> on your device with configurable auto-deletion",
         "perfectTechnique": "Scrub through your video to <accent>perfect your technique</accent>",
         "frameByFrame": "Use a long press for <bold>frame-by-frame precision</bold>"
       }
