@@ -6,40 +6,48 @@
   },
   "Privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: November 07, 2025",
+    "lastUpdated": "Last updated: January 30, 2026",
     "intro": "VideoFit (\"the App\") is provided by us as a free tool. This Privacy Policy explains how we handle your information when you use the App.",
     "sections": {
       "informationWeCollect": {
         "title": "1. Information We Collect",
-        "content": "We do <strong>not</strong> collect, store, or share any personal or non-personal information from users of the App. All activities take place entirely on your device."
+        "content": "The App does not collect, store, or share personal information such as names, email addresses, contact details, or user-generated content.<br></br>However, in order to ensure the stability and proper functioning of the App, <strong>limited anonymous technical data</strong> may be collected automatically when the App encounters an error or crash. This data does <strong>not</strong> identify you personally and is used solely for diagnostic purposes.<br></br>All core app functionality otherwise takes place entirely on your device."
       },
       "devicePermissions": {
         "title": "2. Device Permissions",
-        "content": "The App may request access to certain features on your device, such as the camera, microphone, or storage, in order to record or analyze video content. This access is used solely for functionality within the App and no data is uploaded, stored externally, or shared with anyone."
+        "content": "The App may request access to certain features on your device, such as the camera, microphone, or storage, in order to record or analyze video content. This access is used solely for functionality within the App.<br></br>Video, audio, or media content accessed through these permissions is <strong>not uploaded, stored externally, or shared</strong> with us or any third party."
       },
       "useOfInformation": {
         "title": "3. Use of Your Information",
-        "content": "Since we do not collect any information, we do not use your data for analytics, marketing, or any other purpose."
+        "content": "The limited diagnostic information described above is used exclusively to:<br></br>- Detect and fix software errors<br></br>- Improve app stability and performance<br></br>We do <strong>not</strong> use this information for analytics, marketing, advertising, profiling, or tracking purposes."
       },
       "thirdPartyServices": {
         "title": "4. Third-Party Services",
-        "content": "The App does not use any third-party services (such as analytics tools, advertising networks, or SDKs) that collect data from you."
+        "content": "The App uses <strong>Bugsnag</strong>, a third-party crash reporting service, to monitor app stability and diagnose technical issues.<br></br>When a crash or error occurs, Bugsnag may collect <strong>anonymous technical information</strong> such as:<br></br>- Device type<br></br>- Operating system version<br></br>- App version<br></br>- Crash logs and diagnostic data<br></br>This information does <strong>not</strong> include personal data, is <strong>not linked to individual users</strong>, and is <strong>not used for tracking or advertising</strong>.<br></br>Bugsnag acts as a <strong>data processor</strong> on our behalf and processes data in accordance with applicable data protection laws."
+      },
+      "legalBasis": {
+        "title": "5. Legal Basis for Processing",
+        "content": "For users in the European Union, the processing of anonymous crash and diagnostic data is based on our <strong>legitimate interest</strong> (Article 6(1)(f) GDPR) in maintaining a secure, reliable, and properly functioning application.<br></br>This processing is minimal, proportionate, and does <strong>not</strong> override your fundamental rights or freedoms."
       },
       "dataSecurity": {
-        "title": "5. Data Security",
-        "content": "Although no data is transmitted or stored externally, we are committed to maintaining a high level of security and privacy in all future versions of the App. If any new features require data handling, this policy will be updated accordingly."
+        "title": "6. Data Security",
+        "content": "All diagnostic data transmitted for crash reporting is protected using <strong>industry-standard security measures</strong>, including encryption in transit.<br></br>We are committed to maintaining a high level of security and privacy in the App. If future versions introduce features that require additional data handling, this policy will be updated accordingly."
       },
       "childrensPrivacy": {
-        "title": "6. Children's Privacy",
+        "title": "7. Children's Privacy",
         "content": "The App is not directed toward children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can remove it."
       },
+      "youRights": {
+        "title": "8. Your Rights",
+        "content": "If you are located in the European Union, you have the right to:<br></br>- Request access to information related to you<br></br>- Request deletion of data, where applicable<br></br>- Object to or restrict certain processing activities<br></br>Since the App does <strong>not</strong> collect data that directly identifies users, fulfilling such requests may be limited in practice. However, you may contact us with any concerns."
+      },
       "changesToPolicy": {
-        "title": "7. Changes to This Privacy Policy",
-        "content": "We may update this Privacy Policy from time to time. If we make changes, the updated version will be available within the App or on our official website. Significant changes will be clearly communicated to users."
+        "title": "9. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. If we make changes, the updated version will be available within the App or on our official website. <strong>Significant changes</strong> will be clearly communicated to users."
       },
       "contactUs": {
-        "title": "8. Contact Us",
-        "content": "If you have any questions or concerns about this Privacy Policy, please contact us."
+        "title": "10. Contact Us",
+        "content": "If you have any questions or concerns about this Privacy Policy or how your information is handled, please contact us."
       }
     }
   },

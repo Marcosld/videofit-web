@@ -8,40 +8,53 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]">) {
   const t = await getTranslations("Privacy");
   const sectionsT = await getTranslations("Privacy.sections");
 
+  const sectionContent = (key: Parameters<typeof sectionsT.rich>[0]) => {
+    return sectionsT.rich(key, {
+      strong: (chunks) => <strong>{chunks}</strong>,
+      br: () => <br />,
+    });
+  };
+
   const sections = [
     {
       title: sectionsT("informationWeCollect.title"),
-      content: sectionsT.rich("informationWeCollect.content", {
-        strong: (chunks) => <strong>{chunks}</strong>,
-      }),
+      content: sectionContent("informationWeCollect.content"),
     },
     {
       title: sectionsT("devicePermissions.title"),
-      content: sectionsT("devicePermissions.content"),
+      content: sectionContent("devicePermissions.content"),
     },
     {
       title: sectionsT("useOfInformation.title"),
-      content: sectionsT("useOfInformation.content"),
+      content: sectionContent("useOfInformation.content"),
     },
     {
       title: sectionsT("thirdPartyServices.title"),
-      content: sectionsT("thirdPartyServices.content"),
+      content: sectionContent("thirdPartyServices.content"),
+    },
+    {
+      title: sectionsT("legalBasis.title"),
+      content: sectionContent("legalBasis.content"),
     },
     {
       title: sectionsT("dataSecurity.title"),
-      content: sectionsT("dataSecurity.content"),
+      content: sectionContent("dataSecurity.content"),
     },
     {
       title: sectionsT("childrensPrivacy.title"),
-      content: sectionsT("childrensPrivacy.content"),
+      content: sectionContent("childrensPrivacy.content"),
+    },
+    {
+      title: sectionsT("youRights.title"),
+      content: sectionContent("youRights.content"),
     },
     {
       title: sectionsT("changesToPolicy.title"),
-      content: sectionsT("changesToPolicy.content"),
+      content: sectionContent("changesToPolicy.content"),
     },
     {
       title: sectionsT("contactUs.title"),
-      content: sectionsT("contactUs.content"),
+      content: sectionContent("contactUs.content"),
     },
   ];
 

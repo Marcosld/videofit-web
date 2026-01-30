@@ -6,40 +6,48 @@
   },
   "Privacy": {
     "title": "Política de Privacidad",
-    "lastUpdated": "Última actualización: 07 de noviembre de 2025",
+    "lastUpdated": "Última actualización: 30 de enero de 2026",
     "intro": "VideoFit (\"la Aplicación\") es proporcionada por nosotros como una herramienta gratuita. Esta Política de Privacidad explica cómo manejamos tu información cuando usas la Aplicación.",
     "sections": {
       "informationWeCollect": {
         "title": "1. Información que Recopilamos",
-        "content": "<strong>No</strong> recopilamos, almacenamos ni compartimos información personal o no personal de los usuarios de la Aplicación. Todas las actividades tienen lugar completamente en tu dispositivo."
+        "content": "La Aplicación no recopila, almacena ni comparte información personal como nombres, direcciones de correo electrónico, datos de contacto o contenido generado por el usuario.<br></br>No obstante, para garantizar la estabilidad y el correcto funcionamiento de la Aplicación, puede recopilarse automáticamente <strong>datos técnicos anónimos y limitados</strong> cuando la Aplicación encuentra un error o se bloquea. Estos datos <strong>no</strong> te identifican personalmente y se utilizan únicamente con fines de diagnóstico.<br></br>Por lo demás, toda la funcionalidad principal de la Aplicación tiene lugar íntegramente en tu dispositivo."
       },
       "devicePermissions": {
         "title": "2. Permisos del Dispositivo",
-        "content": "La Aplicación puede solicitar acceso a ciertas funciones de tu dispositivo, como la cámara, micrófono o almacenamiento, para grabar o analizar contenido de video. Este acceso se utiliza únicamente para la funcionalidad dentro de la Aplicación y ningún dato se carga, almacena externamente o se comparte con nadie."
+        "content": "La Aplicación puede solicitar acceso a ciertas funciones de tu dispositivo, como la cámara, el micrófono o el almacenamiento, para grabar o analizar contenido de video. Este acceso se utiliza únicamente para la funcionalidad dentro de la Aplicación.<br></br>El contenido de video, audio o multimedia al que se accede mediante estos permisos <strong>no se sube, no se almacena externamente ni se comparte</strong> con nosotros ni con terceros."
       },
       "useOfInformation": {
         "title": "3. Uso de tu Información",
-        "content": "Como no recopilamos información alguna, no utilizamos tus datos para análisis, marketing o cualquier otro propósito."
+        "content": "La información diagnóstica limitada descrita anteriormente se utiliza exclusivamente para:<br></br>- Detectar y corregir errores de software<br></br>- Mejorar la estabilidad y el rendimiento de la aplicación<br></br>No <strong>utilizamos</strong> esta información para análisis, marketing, publicidad, elaboración de perfiles ni fines de rastreo."
       },
       "thirdPartyServices": {
         "title": "4. Servicios de Terceros",
-        "content": "La Aplicación no utiliza servicios de terceros (como herramientas de análisis, redes publicitarias o SDKs) que recopilen datos de ti."
+        "content": "La Aplicación utiliza <strong>Bugsnag</strong>, un servicio de terceros de informes de fallos, para supervisar la estabilidad de la app y diagnosticar incidencias técnicas.<br></br>Cuando se produce un bloqueo o error, Bugsnag puede recopilar <strong>información técnica anónima</strong> como:<br></br>- Tipo de dispositivo<br></br>- Versión del sistema operativo<br></br>- Versión de la aplicación<br></br>- Registros de fallos y datos de diagnóstico<br></br>Esta información <strong>no</strong> incluye datos personales, <strong>no se vincula a usuarios individuales</strong> y <strong>no se utiliza para rastreo ni publicidad</strong>.<br></br>Bugsnag actúa como <strong>encargado del tratamiento</strong> en nuestro nombre y procesa los datos de acuerdo con la normativa aplicable de protección de datos."
+      },
+      "legalBasis": {
+        "title": "5. Base legal para el tratamiento",
+        "content": "Para los usuarios de la Unión Europea, el procesamiento de datos anónimos de fallos y diagnóstico se basa en nuestro <strong>interés legítimo</strong> (Artículo 6(1)(f) del RGPD) en mantener una aplicación segura, fiable y correctamente funcional.<br></br>Este tratamiento es mínimo, proporcionado y <strong>no</strong> menoscaba tus derechos o libertades fundamentales."
       },
       "dataSecurity": {
-        "title": "5. Seguridad de Datos",
-        "content": "Aunque no se transmiten ni almacenan datos externamente, estamos comprometidos a mantener un alto nivel de seguridad y privacidad en todas las versiones futuras de la Aplicación. Si alguna característica nueva requiere manejo de datos, esta política se actualizará en consecuencia."
+        "title": "6. Seguridad de Datos",
+        "content": "Todos los datos de diagnóstico transmitidos para los informes de fallos están protegidos mediante <strong>medidas de seguridad estándar del sector</strong>, incluida la cifrado en tránsito.<br></br>Estamos comprometidos a mantener un alto nivel de seguridad y privacidad en la Aplicación. Si futuras versiones introducen funciones que requieran un manejo adicional de datos, esta política se actualizará en consecuencia."
       },
       "childrensPrivacy": {
-        "title": "6. Privacidad de Menores",
+        "title": "7. Privacidad de Menores",
         "content": "La Aplicación no está dirigida a menores de 13 años. No recopilamos conscientemente información personal de menores. Si crees que un menor nos ha proporcionado información personal, por favor contacta con nosotros para que podamos eliminarla."
       },
+      "youRights": {
+        "title": "8. Tus derechos",
+        "content": "Si te encuentras en la Unión Europea, tienes derecho a:<br></br>- Solicitar acceso a información relacionada contigo<br></br>- Solicitar la eliminación de datos, cuando proceda<br></br>- Oponerte o limitar determinadas actividades de tratamiento<br></br>Dado que la Aplicación <strong>no</strong> recopila datos que identifiquen directamente a los usuarios, la atención de estas solicitudes puede ser limitada en la práctica. No obstante, puedes contactarnos ante cualquier inquietud."
+      },
       "changesToPolicy": {
-        "title": "7. Cambios a esta Política de Privacidad",
-        "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Si hacemos cambios, la versión actualizada estará disponible dentro de la Aplicación o en nuestro sitio web oficial. Los cambios significativos se comunicarán claramente a los usuarios."
+        "title": "9. Cambios a esta Política de Privacidad",
+        "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Si hacemos cambios, la versión actualizada estará disponible dentro de la Aplicación o en nuestro sitio web oficial. Los <strong>cambios significativos</strong> se comunicarán claramente a los usuarios."
       },
       "contactUs": {
-        "title": "8. Contáctanos",
-        "content": "Si tienes alguna pregunta o inquietud sobre esta Política de Privacidad, por favor contacta con nosotros."
+        "title": "10. Contáctanos",
+        "content": "Si tienes alguna pregunta o inquietud sobre esta Política de Privacidad o sobre cómo se maneja tu información, por favor contacta con nosotros."
       }
     }
   },
