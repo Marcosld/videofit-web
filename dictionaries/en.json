@@ -105,8 +105,8 @@
       "imageAlt": "App screenshot recording with a timer",
       "title": "<highlight>Record yourself</highlight> while training — like a pro.",
       "points": {
-        "customTimers": "<accent>Set custom timers</accent> for each exercise and recording with zero hassle",
-        "audioCountdowns": "Get <accent>audio countdowns</accent> for every isometric hold",
+        "customTimers": "<accent>Set custom timers</accent> for each exercise or <bold>record freely</bold> with zero hassle",
+        "audioCountdowns": "Use <accent>metronome</accent> and <accent>audio countdowns</accent> for your isometric holds",
         "cleanInterface": "A clean, intuitive interface — just tap <bold>record</bold> and crush your set!",
         "instantSave": "Every video is <accent>instantly saved</accent> to your phone’s gallery in the <bold>VideoFit album</bold> — no watermarks, no waiting."
       }
