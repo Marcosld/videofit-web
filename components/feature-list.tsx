@@ -180,6 +180,23 @@ export const FeatureList = () => {
       ),
     },
     {
+      title: t.rich("markers.title", richFormatter),
+      points: [
+        t.rich("markers.points.slowMoReplay", richFormatter),
+        t.rich("markers.points.quickNavigation", richFormatter),
+        t.rich("markers.points.timeMeasurement", richFormatter),
+        t.rich("markers.points.formCheck", richFormatter),
+      ],
+      renderImage: (active: boolean) => (
+        <FeatureScreenshot
+          imageSrc="app-markers.png"
+          imageAlt={t("markers.imageAlt")}
+          active={active}
+          containerScrollYProgress={scrollYProgress}
+        />
+      ),
+    },
+    {
       title: t.rich("tracking.title", richFormatter),
       points: [
         t.rich("tracking.points.calendarView", richFormatter),

@@ -121,6 +121,16 @@
         "frameByFrame": "Usa una presión larga para <bold>avanzar fotograma a fotograma</bold>"
       }
     },
+    "markers": {
+      "imageAlt": "Captura de pantalla de la aplicación mostrando marcadores de video para repetición a cámara lenta y medición de tiempos",
+      "title": "Usa <highlight>marcadores</highlight> en tus videos para un análisis avanzado",
+      "points": {
+        "slowMoReplay": "Crea <accent>bucles a cámara lenta</accent> entre marcadores para analizar cada detalle de tu movimiento",
+        "quickNavigation": "<bold>Salta al instante</bold> a cualquier parte de tu video usando marcadores como <accent>puntos de navegación</accent>",
+        "timeMeasurement": "Mide <accent>tiempos concéntricos y excéntricos</accent> entre marcadores para estimar <bold>niveles de fatiga</bold> o predecir tu <bold>1RM</bold>",
+        "formCheck": "Una herramienta flexible para <accent>revisiones avanzadas de forma</accent> y <bold>mediciones precisas de rendimiento</bold>"
+      }
+    },
     "tracking": {
       "imageAlt": "Captura de pantalla de la aplicación filtrando grabaciones por fecha",
       "imageAlt2": "Captura de pantalla de la aplicación mostrando un calendario anual",

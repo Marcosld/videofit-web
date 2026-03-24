@@ -121,6 +121,16 @@
         "frameByFrame": "Use a long press for <bold>frame-by-frame precision</bold>"
       }
     },
+    "markers": {
+      "imageAlt": "App screenshot showing video markers for slow-mo replay and time measurement",
+      "title": "Use <highlight>markers</highlight> in your videos for advanced analysis",
+      "points": {
+        "slowMoReplay": "Create <accent>slow-motion loops</accent> between markers to analyze every detail of your movement",
+        "quickNavigation": "<bold>Jump instantly</bold> to any part of your video using markers as <accent>navigation points</accent>",
+        "timeMeasurement": "Measure <accent>concentric and eccentric times</accent> between markers to estimate <bold>fatigue levels</bold> or predict your <bold>1RM</bold>",
+        "formCheck": "A flexible tool for <accent>advanced form checks</accent> and precise <bold>performance measurements</bold>"
+      }
+    },
     "tracking": {
       "imageAlt": "App screenshot filtering recordings by date",
       "imageAlt2": "App screenshot showing a yearly calendar",
