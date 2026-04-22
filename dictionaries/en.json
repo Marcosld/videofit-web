@@ -23,7 +23,7 @@
       },
       "thirdPartyServices": {
         "title": "4. Third-Party Services",
-        "content": "The App uses <strong>Bugsnag</strong>, a third-party crash reporting service, to monitor app stability and diagnose technical issues.<br></br>When a crash or error occurs, Bugsnag may collect <strong>anonymous technical information</strong> such as:<br></br>- Device type<br></br>- Operating system version<br></br>- App version<br></br>- Crash logs and diagnostic data<br></br>This information does <strong>not</strong> include personal data, is <strong>not linked to individual users</strong>, and is <strong>not used for tracking or advertising</strong>.<br></br>Bugsnag acts as a <strong>data processor</strong> on our behalf and processes data in accordance with applicable data protection laws."
+        "content": "The App uses <strong>Sentry</strong>, a third-party crash reporting service, to monitor app stability and diagnose technical issues.<br></br>When a crash or error occurs, Sentry may collect <strong>anonymous technical information</strong> such as:<br></br>- Device type<br></br>- Operating system version<br></br>- App version<br></br>- Crash logs and diagnostic data<br></br>This information does <strong>not</strong> include personal data, is <strong>not linked to individual users</strong>, and is <strong>not used for tracking or advertising</strong>.<br></br>Sentry acts as a <strong>data processor</strong> on our behalf and processes data in accordance with applicable data protection laws."
       },
       "legalBasis": {
         "title": "5. Legal Basis for Processing",
