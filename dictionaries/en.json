@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "VideoFit: Workout video timer app, gym video log & calisthenic tracker",
-    "description": "Record yourself, check your form and track your progress with VideoFit. Video timer with countdown for your holds and a calendar. Instant video playback.",
-    "keywords": "VideoFit, workout video timer, gym video log, workout tracker, calisthenics app, handstand training, yoga video recorder, weightlifting tracker, fitness app, exercise video timer, countdown timer"
+    "description": "Record yourself, check your form and track your progress with VideoFit. Video timer with countdown for your holds and a calendar. Tag and search your videos to organize your training library. Instant video playback.",
+    "keywords": "VideoFit, workout video timer, gym video log, workout tracker, calisthenics app, handstand training, yoga video recorder, weightlifting tracker, fitness app, exercise video timer, countdown timer, video tags, tag search, organize workout videos"
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -140,6 +140,17 @@
         "findByDate": "Find any recording by date — <bold>instantly</bold>",
         "confidenceGrow": "Watch your form evolve and your <accent>confidence grow</accent>",
         "trackJourney": "Stay inspired by <bold>tracking your journey</bold> to mastery"
+      }
+    },
+    "tags": {
+      "imageAlt": "App screenshot filtering and searching recordings by tag",
+      "imageAlt2": "App screenshot showing tags on a recording in the player",
+      "title": "Organize and find your videos with <highlight>tags</highlight>",
+      "points": {
+        "organize": "Add <accent>custom tags</accent> to any recording to <bold>organize your training library</bold>",
+        "search": "<bold>Search your tags</bold> to jump straight to the videos you want",
+        "filter": "Combine tags to <accent>filter your recordings</accent> by exercise, discipline or goal",
+        "findFast": "Find the right clip in seconds — <accent>no endless scrolling</accent>"
       }
     },
     "customization": {

@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "VideoFit: Aplicación temporizador y seguimiento videos de workout",
-    "description": "Grábate, revisa tu técnica y sigue tu progreso. Temporizador de video con cuenta regresiva y calendario para registrar tus entrenos. Reproducción inmediata.",
-    "keywords": "VideoFit, temporizador de videos de entrenamiento, seguimiento videos gimnasio, seguimiento de ejercicios, aplicación de calistenia, entrenamiento de handstands, grabadora de videos de yoga, seguimiento de levantamiento de pesas, aplicación de fitness, temporizador de videos de ejercicios, temporizador con cuenta regresiva"
+    "description": "Grábate, revisa tu técnica y sigue tu progreso. Temporizador de video con cuenta regresiva y calendario para registrar tus entrenos. Etiqueta y busca tus videos para organizar tu biblioteca de entrenamiento. Reproducción inmediata.",
+    "keywords": "VideoFit, temporizador de videos de entrenamiento, seguimiento videos gimnasio, seguimiento de ejercicios, aplicación de calistenia, entrenamiento de handstands, grabadora de videos de yoga, seguimiento de levantamiento de pesas, aplicación de fitness, temporizador de videos de ejercicios, temporizador con cuenta regresiva, etiquetas de video, búsqueda por etiquetas, organizar videos de entrenamiento"
   },
   "Privacy": {
     "title": "Política de Privacidad",
@@ -140,6 +140,17 @@
         "findByDate": "Encuentra cualquier grabación por fecha — <bold>al instante</bold>",
         "confidenceGrow": "Observa cómo evoluciona tu técnica y cómo <accent>crece tu confianza</accent>",
         "trackJourney": "Mantente inspirado <bold>siguiendo tu camino</bold> hacia la maestría"
+      }
+    },
+    "tags": {
+      "imageAlt": "Captura de pantalla de la aplicación filtrando y buscando grabaciones por etiqueta",
+      "imageAlt2": "Captura de pantalla de la aplicación mostrando etiquetas en una grabación en el reproductor",
+      "title": "Organiza y encuentra tus videos con <highlight>etiquetas</highlight>",
+      "points": {
+        "organize": "Añade <accent>etiquetas personalizadas</accent> a cualquier grabación para <bold>organizar tu biblioteca de entrenamiento</bold>",
+        "search": "<bold>Busca por etiquetas</bold> y ve directo a los videos que quieres",
+        "filter": "Combina etiquetas para <accent>filtrar tus grabaciones</accent> por ejercicio, disciplina u objetivo",
+        "findFast": "Encuentra el video correcto en segundos — <accent>sin desplazamientos interminables</accent>"
       }
     },
     "customization": {
