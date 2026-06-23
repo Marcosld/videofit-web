@@ -26,14 +26,34 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
+  const title = t("title");
+  const description = t("description");
+
   return {
-    title: t("title"),
-    description: t("description"),
+    metadataBase: new URL("https://www.videofit.app"),
+    title,
+    description,
     keywords: t("keywords"),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        ...Object.fromEntries(routing.locales.map((loc) => [loc, `/${loc}`])),
+        "x-default": `/${routing.defaultLocale}`,
+      },
+    },
     openGraph: {
       type: "website",
       locale: locale,
       alternateLocale: routing.locales.filter((loc) => loc !== locale),
+      title,
+      description,
+      url: `/${locale}`,
+      siteName: "VideoFit",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
     robots: {
       index: true,

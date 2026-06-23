@@ -185,5 +185,39 @@
     "imageAlt": "Marcos, creador de VideoFit",
     "title": "¡Hola! Soy <accent>Marcos</accent>, el <highlight>creador de VideoFit.</highlight>",
     "intro": "Soy de España y me dedico al desarrollo de software. También soy un amante del deporte. He estado entrenando calistenia y handstands durante más de 7 años. Desde el principio, fue <bold>crucial para mí grabarme</bold> para revisar mi forma, buscar desequilibrios y seguir mi progreso. <bold>Todo comenzó con la cámara de mi teléfono</bold>, luego creé una aplicación que me permitía establecer <bold>temporizadores para mis ejercicios isométricos</bold> mientras me grababa. Después de algunos años usándola para mí, esa idea evolucionó hasta convertirse en VideoFit, una app que decidí publicar para ayudar a otros en su camino fitness."
+  },
+  "JsonLd": {
+    "featureList": [
+      "Graba entrenamientos con temporizadores personalizados y cuentas regresivas de audio",
+      "Revisión instantánea y fotograma a fotograma de tus videos",
+      "Etiqueta, busca y filtra tus videos de entrenamiento",
+      "Sigue tu progreso en una vista de calendario",
+      "Marcadores para análisis a cámara lenta y medición de rendimiento"
+    ]
+  },
+  "Faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "¿Cómo organizo mis videos de entrenamiento en VideoFit?",
+        "answer": "Añade etiquetas personalizadas a cualquier grabación — por ejercicio, disciplina u objetivo — y luego busca o combina etiquetas para filtrar tu biblioteca de entrenamiento y encontrar el video que quieres en segundos, sin scroll interminable."
+      },
+      {
+        "question": "¿Puedo buscar y filtrar mis videos de entrenamiento por etiqueta?",
+        "answer": "Sí. Busca una etiqueta para ir directamente a los videos que coinciden, o combina varias etiquetas para filtrar tus grabaciones por ejercicio, disciplina u objetivo."
+      },
+      {
+        "question": "¿VideoFit es gratis?",
+        "answer": "Sí. VideoFit es gratis y sin anuncios, y no requiere registro. Todos tus videos y datos permanecen en tu dispositivo."
+      },
+      {
+        "question": "¿VideoFit funciona en iOS y Android?",
+        "answer": "Sí. VideoFit está disponible tanto para iOS como para Android."
+      },
+      {
+        "question": "¿Mis videos se suben a algún sitio?",
+        "answer": "No. Las grabaciones se guardan directamente en la galería de tu teléfono y nunca se suben ni se comparten. Todo permanece en tu dispositivo."
+      }
+    ]
   }
 }

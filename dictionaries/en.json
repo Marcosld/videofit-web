@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "VideoFit: Workout video timer app, gym video log & calisthenic tracker",
+    "title": "VideoFit: Workout video timer app, gym video log & calisthenics tracker",
     "description": "Record yourself, check your form and track your progress with VideoFit. Video timer with countdown for your holds and a calendar. Tag and search your videos to organize your training library. Instant video playback.",
     "keywords": "VideoFit, workout video timer, gym video log, workout tracker, calisthenics app, handstand training, yoga video recorder, weightlifting tracker, fitness app, exercise video timer, countdown timer, video tags, tag search, organize workout videos"
   },
@@ -185,5 +185,39 @@
     "imageAlt": "Marcos, creator of VideoFit",
     "title": "Hi! I'm <accent>Marcos</accent>, the <highlight>creator of VideoFit.</highlight>",
     "intro": "I'm a software developer from Spain and a bodyweight fitness enthusiast. I've been training calisthenics and handstands for 7+ years. Since the beginning it was <bold>crucial for me to record myself</bold> to check my form, look for imbalances and track my progress. <bold>It all started with my phone's camera</bold>, then I created an app that would let me set <bold>timers for my isometric holds</bold> while recording myself. After some years of using it for myself, that idea evolved into VideoFit, which I published to help others on their fitness journey."
+  },
+  "JsonLd": {
+    "featureList": [
+      "Record workouts with custom timers and audio countdowns",
+      "Instant replay and frame-by-frame video review",
+      "Tag, search and filter your training videos",
+      "Track progress in a calendar view",
+      "Markers for slow-motion analysis and performance measurement"
+    ]
+  },
+  "Faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How do I organize my workout videos in VideoFit?",
+        "answer": "Add custom tags to any recording — by exercise, discipline or goal — then search or combine tags to filter your training library and find the right clip in seconds, with no endless scrolling."
+      },
+      {
+        "question": "Can I search and filter my training videos by tag?",
+        "answer": "Yes. Search a tag to jump straight to matching videos, or combine several tags to filter your recordings by exercise, discipline or goal."
+      },
+      {
+        "question": "Is VideoFit free?",
+        "answer": "Yes. VideoFit is free and ad-free, and requires no sign-up. All your videos and data stay on your device."
+      },
+      {
+        "question": "Does VideoFit work on iOS and Android?",
+        "answer": "Yes. VideoFit is available for both iOS and Android."
+      },
+      {
+        "question": "Are my videos uploaded anywhere?",
+        "answer": "No. Recordings are saved directly to your phone's gallery and are never uploaded or shared. Everything stays on your device."
+      }
+    ]
   }
 }
