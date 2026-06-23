@@ -10,7 +10,7 @@ export const Hero = () => {
 
   return (
     <div className="flex justify-center bg-radial-[at_25%_50%] from-amber-50 via-pink-200 to-amber-50 snap-center">
-      <section className="pt-20 2xl:pt-10 pb-6 px-8 max-w-7xl md:grid md:grid-cols-2 min-h-screen overflow-y-hidden">
+      <section className="pt-20 2xl:pt-18 pb-6 px-8 max-w-7xl md:grid md:grid-cols-2 min-h-screen overflow-y-hidden">
         <div className="flex flex-col justify-center text-center items-center md:text-left md:items-start">
           <div className="mt-8 xl:mt-16">
             <h1 className="text-4xl font-bold text-pink-600">

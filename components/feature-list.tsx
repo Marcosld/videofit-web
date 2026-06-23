@@ -179,21 +179,34 @@ export const FeatureList = () => {
         />
       ),
     },
+
     {
-      title: t.rich("markers.title", richFormatter),
+      title: t.rich("tags.title", richFormatter),
       points: [
-        t.rich("markers.points.slowMoReplay", richFormatter),
-        t.rich("markers.points.quickNavigation", richFormatter),
-        t.rich("markers.points.timeMeasurement", richFormatter),
-        t.rich("markers.points.formCheck", richFormatter),
+        t.rich("tags.points.organize", richFormatter),
+        t.rich("tags.points.search", richFormatter),
+        t.rich("tags.points.filter", richFormatter),
+        t.rich("tags.points.findFast", richFormatter),
       ],
       renderImage: (active: boolean) => (
-        <FeatureScreenshot
-          imageSrc="app-markers.png"
-          imageAlt={t("markers.imageAlt")}
-          active={active}
-          containerScrollYProgress={scrollYProgress}
-        />
+        <div className="relative md:sticky md:top-0 md:col-start-1 md:row-start-1 flex items-center justify-center max-w-xs ml-auto mr-auto md:max-w-full">
+          <div className="absolute inset-0 flex items-center justify-center -ml-10 xl:-ml-32">
+            <FeatureScreenshot
+              imageSrc="app-tags-filter.png"
+              imageAlt={t("tags.imageAlt")}
+              active={active}
+              containerScrollYProgress={scrollYProgress}
+            />
+          </div>
+          <div className="ml-10 xl:ml-32">
+            <FeatureScreenshot
+              imageSrc="app-tags.png"
+              imageAlt={t("tags.imageAlt2")}
+              active={active}
+              containerScrollYProgress={scrollYProgress}
+            />
+          </div>
+        </div>
       ),
     },
     {
@@ -226,32 +239,20 @@ export const FeatureList = () => {
       ),
     },
     {
-      title: t.rich("tags.title", richFormatter),
+      title: t.rich("markers.title", richFormatter),
       points: [
-        t.rich("tags.points.organize", richFormatter),
-        t.rich("tags.points.search", richFormatter),
-        t.rich("tags.points.filter", richFormatter),
-        t.rich("tags.points.findFast", richFormatter),
+        t.rich("markers.points.slowMoReplay", richFormatter),
+        t.rich("markers.points.quickNavigation", richFormatter),
+        t.rich("markers.points.timeMeasurement", richFormatter),
+        t.rich("markers.points.formCheck", richFormatter),
       ],
       renderImage: (active: boolean) => (
-        <div className="relative md:sticky md:top-0 md:col-start-1 md:row-start-1 flex items-center justify-center max-w-xs ml-auto mr-auto md:max-w-full">
-          <div className="absolute inset-0 flex items-center justify-center -ml-10 xl:-ml-32">
-            <FeatureScreenshot
-              imageSrc="app-tags-filter.png"
-              imageAlt={t("tags.imageAlt")}
-              active={active}
-              containerScrollYProgress={scrollYProgress}
-            />
-          </div>
-          <div className="ml-10 xl:ml-32">
-            <FeatureScreenshot
-              imageSrc="app-tags.png"
-              imageAlt={t("tags.imageAlt2")}
-              active={active}
-              containerScrollYProgress={scrollYProgress}
-            />
-          </div>
-        </div>
+        <FeatureScreenshot
+          imageSrc="app-markers.png"
+          imageAlt={t("markers.imageAlt")}
+          active={active}
+          containerScrollYProgress={scrollYProgress}
+        />
       ),
     },
     {
